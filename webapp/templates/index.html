@@ -15,13 +15,18 @@
 <div class="container">
     <h1>ToDo list</h1>
     <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action " aria-current="true">
-        Проснуться
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">Посмотреть на домашнее задание</a>
-      <a href="#" class="list-group-item list-group-item-action">Поплакать</a>
-      <a href="#" class="list-group-item list-group-item-action">Постараться выполнить задание</a>
-    </div>
+        {% for tasks in tasks %}
+          <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+              {{tasks.description}} -  {{tasks.status}}
+          </a>
+
+        </div>
+        {% endfor %}
+
+<!--    {% for tasks in tasks %}-->
+<!--        <p>Task - {{ tasks.description }} -  {{tasks.status}}</p>-->
+<!--        <a href="#">По подробнее</a>-->
+<!--    {% endfor %}-->
 
 </div>
 </body>
