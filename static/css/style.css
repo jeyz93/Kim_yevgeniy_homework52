@@ -1,8 +1,36 @@
 body{
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
+    background-color: white;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.task_info{
+    display: inline-block;
+    border: 2px solid grey;
+    width: 33%;
+    margin-top: 50px;
+}
+.text_dscr{
+    text-align: center;
+}
+
+.data_in{
+    margin-left: 38px;
+}
+.send{
+    margin-left: 77px;
+    margin-top: 8px;
+}
+
+.form_box{
+    display: inline-block;
+    border: 2px solid grey;
+    width: 33%;
+    margin-top: 50px;
+    padding: 15px;
 }

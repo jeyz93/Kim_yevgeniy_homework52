@@ -10,18 +10,20 @@
 <body>
     <div class="container">
         <h1> Create task </h1>
-        <form action = "/" method="POST">
-        {% csrf_token %}
-        <div class="form_row">
-            <label for="description">Описание</label>
-            <input name="description" type="text">
-        </div>
-        <div class="form_row">
-            <label for="data_do">Дата</label>
-            <input name="data_do" type="text">
-        </div>
-        <div class="form_row">
-        <input type="submit">
+        <div class="form_box">
+            <form action = "/" method="POST">
+            {% csrf_token %}
+            <div class="form_row">
+                <label for="description">Описание</label>
+                <input name="description" type="text">
+            </div>
+            <div class="form_row">
+                <label for="data_do">Дата</label>
+                <input class="data_in" name="data_do" type="text">
+            </div>
+            <div class="send">
+                <input type="submit">
+            </div>
         </div>
     </form>
   </div>
